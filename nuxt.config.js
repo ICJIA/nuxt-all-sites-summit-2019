@@ -60,7 +60,7 @@ module.exports = {
         container: 'body',
         duration: 500,
         easing: 'ease',
-        offset: -80,
+        offset: 0,
         force: true,
         cancelable: true,
         onStart: false,

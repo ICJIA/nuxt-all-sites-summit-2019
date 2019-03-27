@@ -20,7 +20,7 @@ const config = {
       layout: 'full'
     },
     {
-      id: 'about',
+      id: 'about-the-summit',
       title: 'About the Summit',
       file: 'about-the-summit.md',
       theme: 'dark',

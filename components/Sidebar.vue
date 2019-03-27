@@ -8,7 +8,7 @@
       <h2
         v-scroll-to="'#home'"
         class="text-xs-center"
-        style="color: #fff; font-size: 34px; margin-top: 20px;margin-bottom: 50px; border-bottom: 1px solid #ccc; padding-bottom: 10px;"
+        style="font-size: 34px; margin-top: 20px;margin-bottom: 50px; border-bottom: 1px solid #ccc; padding-bottom: 10px;"
       >
         SUMMIT TITLE HERE
         
@@ -17,15 +17,16 @@
       <div
         v-for="page in config.pages"
         :key="page.title"
-        class="text-xs-center "
+        class="text-xs-center"
         @click="scrollToSection(page.id)"
       >
         <div 
-          style="" 
+          :id="'sidebar-' + page.id" 
           class="mb-4 sidebar pr-3 pl-3">
           <div 
             v-scroll-to="'#home'" 
-            v-if="page.id === 'home'">
+            v-if="page.id === 'home'"
+            class="active">
             Home
           </div>
           <div 
@@ -56,6 +57,9 @@ export default {
     },
     isSm() {
       return this.$vuetify.breakpoint.sm
+    },
+    sideBarId() {
+      return 'sidebar-'
     }
   },
   mounted() {
@@ -69,17 +73,14 @@ export default {
     EventBus.$on('toggleSidebar', () => {
       this.drawer = !this.drawer
     })
-    EventBus.$on('closeSidebar', () => {
-      this.drawer = false
-    })
-    EventBus.$on('openSidebar', () => {
-      this.drawer = true
+    EventBus.$on('setSidebar', value => {
+      this.drawer = value
     })
   },
   methods: {
     scrollToSection(id) {
       if (this.isXs || this.isSm) {
-        EventBus.$emit('closeSidebar')
+        EventBus.$emit('setSidebar', false)
       }
       EventBus.$emit('scrollTo', id)
     }
@@ -109,5 +110,9 @@ h6 {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.active {
+  color: yellow !important;
 }
 </style>

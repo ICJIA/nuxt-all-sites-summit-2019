@@ -1,14 +1,17 @@
 /* eslint-disable vue/max-attributes-per-line */
 <template>
-  <div>
+  <div 
+    :id="page.id" 
+    class="page">
     <v-container
       :style="setPageStyle(page.theme)"
-      fluid
       
-      class="full-width full-height"
+      fluid
+      class="full-width full-height "
     >
     
       <v-layout 
+       
         row 
         pl-5 
         pr-5>
@@ -21,11 +24,11 @@
               <template v-slot:header>
                 <div v-if="page.id === 'home'">
                   <h1 
-                    :id="page.id" 
+                    
                     class="mb-5">{{ page.title }}</h1>
                 </div>
                 <div v-else>
-                  <h2 :id="page.id">{{ page.title }}</h2>
+                  <h2 >{{ page.title }}</h2>
                 </div>
               </template>
               <template v-slot:content>
@@ -105,6 +108,7 @@ export default {
     setPageStyle(theme) {
       return this.config.theme[theme]
     },
+
     showSlot(layout) {
       const test = this.page.layout && layout
       console.log(test)
@@ -122,7 +126,7 @@ export default {
 
 .full-height {
   padding-top: 85px !important;
-  min-height: 110vh;
+  min-height: 100vh;
   padding-bottom: 120px !important;
 }
 
