@@ -69,9 +69,18 @@ export default {
     EventBus.$on('toggleSidebar', () => {
       this.drawer = !this.drawer
     })
+    EventBus.$on('closeSidebar', () => {
+      this.drawer = false
+    })
+    EventBus.$on('openSidebar', () => {
+      this.drawer = true
+    })
   },
   methods: {
     scrollToSection(id) {
+      if (this.isXs || this.isSm) {
+        EventBus.$emit('closeSidebar')
+      }
       EventBus.$emit('scrollTo', id)
     }
   }
