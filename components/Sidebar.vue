@@ -11,7 +11,7 @@
         style="color: #fff; font-size: 34px; margin-top: 20px;margin-bottom: 50px; border-bottom: 1px solid #ccc; padding-bottom: 10px;"
       >
         SUMMIT TITLE HERE
-        {{ isXs }}{{ isSm }}
+        
       </h2>
 
       <div
