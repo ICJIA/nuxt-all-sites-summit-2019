@@ -6,6 +6,8 @@
     @click="toggleSidebar"
   >menu</v-icon
   >
+
+
 </template>
 
 <script>
@@ -50,10 +52,18 @@ export default {
   top: 10px;
   margin-left: 15px;
 }
+
+#hamburger:hover {
+  color: #aaa;
+}
 .dark {
   color: black;
 }
 .light {
   color: #fff;
+}
+
+button:focus {
+  outline: 0 !important;
 }
 </style>
