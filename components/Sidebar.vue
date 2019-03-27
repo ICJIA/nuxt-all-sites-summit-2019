@@ -5,37 +5,49 @@
       app 
       
       class="teal darken-1">
-      <h2
-        v-scroll-to="'#home'"
-        class="text-xs-center"
-        style="font-size: 34px; margin-top: 20px;margin-bottom: 50px; border-bottom: 1px solid #ccc; padding-bottom: 10px;"
-      >
-        SUMMIT TITLE HERE
+     
+      <v-layout 
+        fill-height 
+        column 
+        ma-0 >
+        <h2
+          v-scroll-to="'#home'"
+          class="text-xs-center"
+          style="font-size: 34px; margin-top: 20px;margin-bottom: 50px; border-bottom: 1px solid #ccc; padding-bottom: 10px;"
+        >
+          SUMMIT TITLE HERE
         
-      </h2>
+        </h2>
 
-      <div
-        v-for="page in config.pages"
-        :key="page.title"
-        class="text-xs-center"
-        @click="scrollToSection(page.id)"
-      >
-        <div 
-          :id="'sidebar-' + page.id" 
-          class="mb-4 sidebar pr-3 pl-3">
+        <div
+          v-for="page in config.pages"
+          :key="page.title"
+          class="text-xs-center"
+          @click="scrollToSection(page.id)"
+        >
           <div 
-            v-scroll-to="'#home'" 
-            v-if="page.id === 'home'"
-            class="active">
-            Home
-          </div>
-          <div 
-            v-scroll-to="'#' + page.id" 
-            v-else>
-            {{ page.title }}
+            :id="'sidebar-' + page.id" 
+            class="mb-4 sidebar pr-3 pl-3">
+            <div 
+              v-scroll-to="'#home'" 
+              v-if="page.id === 'home'"
+              class="active">
+              Home
+            </div>
+            <div 
+              v-scroll-to="'#' + page.id" 
+              v-else>
+              {{ page.title }}
+            </div>
           </div>
         </div>
-      </div>
+        <v-spacer/>
+        <v-divider/>
+        <div class="text-xs-center mb-3 pt-3">
+          <h4 style="color: #333;">Additional Info Here</h4>
+        </div>
+      </v-layout>
+      
     </v-navigation-drawer>
   </div>
 </template>

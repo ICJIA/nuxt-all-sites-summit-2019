@@ -25,10 +25,10 @@
                 <div v-if="page.id === 'home'">
                   <h1 
                     
-                    class="mb-5">{{ page.title }}</h1>
+                    class="mb-5 main">{{ page.title }}</h1>
                 </div>
                 <div v-else>
-                  <h2 >{{ page.title }}</h2>
+                  <h2 class="header">{{ page.title }}</h2>
                 </div>
               </template>
               <template v-slot:content>
@@ -147,21 +147,19 @@ div.sidebar {
   font-style: normal;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 30px;
-  line-height: 60px;
+h1.main {
+  font-size: 3.5em;
 }
 
-h2 {
-  font-size: 36px;
+h2.header {
+  font-size: 2.5em;
   margin-bottom: 35px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 8px;
 }
 
-h3 {
-  font-size: 30px;
+.muted {
+  color: #666;
 }
 
 ul {
