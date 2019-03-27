@@ -51,7 +51,7 @@ const config = {
     },
     light: {
       color: '#333',
-      background: '#fff'
+      background: '#efefef'
     }
   }
 }

@@ -179,4 +179,8 @@ p {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
+
+.page {
+  border-top: 1px solid #555;
+}
 </style>
