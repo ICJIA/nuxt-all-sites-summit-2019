@@ -87,14 +87,12 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          // enforce: 'pre',
-          test: /\.md$/i,
-          loader: 'raw-loader',
-          exclude: /(node_modules)/
-        })
-      }
+      config.module.rules.push({
+        // enforce: 'pre',
+        test: /\.md$/i,
+        loader: 'raw-loader',
+        exclude: /(node_modules)/
+      })
     }
   }
 }
