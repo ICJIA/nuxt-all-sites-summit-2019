@@ -3,7 +3,7 @@
     <v-navigation-drawer 
       v-model="drawer" 
       app 
-      enable-resize-watcher 
+      
       class="teal darken-1">
       <h2
         v-scroll-to="'#home'"
@@ -11,6 +11,7 @@
         style="color: #fff; font-size: 34px; margin-top: 20px;margin-bottom: 50px; border-bottom: 1px solid #ccc; padding-bottom: 10px;"
       >
         SUMMIT TITLE HERE
+        {{ isXs }}{{ isSm }}
       </h2>
 
       <div
@@ -44,9 +45,24 @@ import config from '@/config'
 export default {
   data() {
     return {
-      drawer: true,
+      drawer: null,
       clipped: false,
       config
+    }
+  },
+  computed: {
+    isXs() {
+      return this.$vuetify.breakpoint.xs
+    },
+    isSm() {
+      return this.$vuetify.breakpoint.sm
+    }
+  },
+  mounted() {
+    if (this.isXs || this.isSm) {
+      this.drawer = false
+    } else {
+      this.drawer = true
     }
   },
   mounted() {
