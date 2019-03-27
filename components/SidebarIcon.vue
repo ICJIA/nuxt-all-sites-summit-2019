@@ -1,7 +1,7 @@
 <template>
   <v-icon 
     id="hamburger" 
-    color="black" 
+    :class="{dark: isDark, light: isLight}"
     x-large 
     @click="toggleSidebar"
   >menu</v-icon
@@ -10,7 +10,32 @@
 
 <script>
 import { EventBus } from '@/event-bus.js'
+import config from '@/config'
 export default {
+  data() {
+    return {
+      theme: 'light'
+    }
+  },
+  computed: {
+    isDark() {
+      return this.theme === 'light'
+    },
+    isLight() {
+      return this.theme === 'dark'
+    }
+  },
+  mounted() {
+    EventBus.$on('pageUpdate', id => {
+      console.log('New page: ', id)
+      const result = config.pages.find(obj => {
+        if (obj.id === id) {
+          return obj
+        }
+      })
+      this.theme = result.theme
+    })
+  },
   methods: {
     toggleSidebar() {
       EventBus.$emit('toggleSidebar')
@@ -24,5 +49,11 @@ export default {
   position: fixed;
   top: 10px;
   margin-left: 15px;
+}
+.dark {
+  color: black;
+}
+.light {
+  color: #fff;
 }
 </style>

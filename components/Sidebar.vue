@@ -113,6 +113,6 @@ h6 {
 }
 
 .active {
-  color: yellow !important;
+  color: #42d5c6 !important;
 }
 </style>

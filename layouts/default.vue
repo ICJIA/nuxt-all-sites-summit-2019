@@ -13,11 +13,24 @@
 <script>
 import config from '@/config'
 import Sidebar from '@/components/Sidebar'
+import { EventBus } from '@/event-bus.js'
 export default {
   name: 'App',
   components: {
     Sidebar
   },
+  data() {
+    return {
+      currentPage: null
+    }
+  },
+  watch: {
+    currentPage(newValue, oldValue) {
+      //console.log(newValue)
+      EventBus.$emit('pageUpdate', newValue)
+    }
+  },
+
   mounted() {
     let page = document.querySelectorAll('.page')
     let pages = {}
@@ -27,7 +40,8 @@ export default {
     Array.prototype.forEach.call(page, function(e) {
       pages[e.id] = e.offsetTop
     })
-    window.onscroll = function() {
+
+    window.onscroll = () => {
       const scrollPosition =
         document.documentElement.scrollTop || document.body.scrollTop
       for (p in pages) {
@@ -38,6 +52,7 @@ export default {
             els[i].classList.remove('active')
           }
           el.className += ' active'
+          this.currentPage = p
         }
       }
     }
