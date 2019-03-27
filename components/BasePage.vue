@@ -99,8 +99,6 @@ export default {
     renderedMarkdown() {
       const markdown = require(`@/markdown/${this.page.file}`)
       return md.render(markdown.default)
-
-      return 'test'
     }
   },
   methods: {
