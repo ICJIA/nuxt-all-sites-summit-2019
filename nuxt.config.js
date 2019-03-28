@@ -64,22 +64,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
 
-    [
-      'vue-scrollto/nuxt',
-      {
-        container: 'body',
-        duration: 500,
-        easing: 'ease',
-        offset: 0,
-        force: true,
-        cancelable: true,
-        onStart: false,
-        onDone: false,
-        onCancel: false,
-        x: false,
-        y: true
-      }
-    ]
+    ['vue-scrollto/nuxt', config.scrollToOptions]
   ],
 
   /*
@@ -99,9 +84,9 @@ module.exports = {
     extend(config, ctx) {
       config.module.rules.push({
         // enforce: 'pre',
-        test: /\.md$/i,
-        loader: 'raw-loader',
-        exclude: /(node_modules)/
+        // test: /\.md$/i,
+        // loader: 'raw-loader',
+        // exclude: /(node_modules)/
       })
     }
   }

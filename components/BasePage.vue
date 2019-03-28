@@ -76,9 +76,7 @@
 <script>
 import config from '@/config'
 const md = require('markdown-it')(config.markdownItOptions)
-
   .use(require('markdown-it-named-headers'))
-
   .use(require('markdown-it-attrs'))
 
 import PageContent from '@/components/PageContent'
@@ -105,9 +103,7 @@ export default {
       return md.render(this.page.body)
     }
   },
-  mounted() {
-    console.log('Page: ', this.page.attributes.title)
-  },
+  mounted() {},
   methods: {
     setPageStyle(theme) {
       return this.config.theme[theme]

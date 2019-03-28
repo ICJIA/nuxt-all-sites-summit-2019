@@ -27,7 +27,7 @@ fs.readdir(markdown, (err, files) => {
       let obj = {}
       obj = fm(data)
       /**
-       * Move attributes.position into sorting position ...
+       * Move attributes.position into sortable position ...
        */
       obj.position = obj.attributes.position
       arr.push(obj)
