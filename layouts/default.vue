@@ -26,17 +26,21 @@ export default {
   },
   watch: {
     currentPage(newValue, oldValue) {
-      //console.log(newValue)
       EventBus.$emit('pageUpdate', newValue)
     }
   },
 
   mounted() {
+    /**
+     * Get all pages in window ...
+     */
     let page = document.querySelectorAll('.page')
     let pages = {}
     let p = 0
     let offset = 0
-
+    /**
+     * ... determine offset ...
+     */
     Array.prototype.forEach.call(page, function(e) {
       pages[e.id] = e.offsetTop
     })
@@ -46,8 +50,14 @@ export default {
         document.documentElement.scrollTop || document.body.scrollTop
       for (p in pages) {
         if (pages[p] <= scrollPosition) {
+          /**
+           * ... then add 'active' class to current section ...
+           */
           const el = document.getElementById('sidebar-' + p)
           var els = document.querySelectorAll('.active')
+          /**
+           * ... and remove .active from all other sections.
+           */
           for (var i = 0; i < els.length; i++) {
             els[i].classList.remove('active')
           }
@@ -57,10 +67,6 @@ export default {
       }
     }
   },
-  methods: {
-    onScroll(e) {
-      console.log(e)
-    }
-  }
+  methods: {}
 }
 </script>

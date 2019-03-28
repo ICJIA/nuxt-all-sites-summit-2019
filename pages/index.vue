@@ -2,16 +2,16 @@
   <div >
     <sidebar-icon/>
     <base-page 
-      v-for="(page, index) in config.pages" 
+      v-for="(page, index) in pages" 
       :key="index" 
       :page="page"/>
   </div>
 </template>
 
 <script>
-import config from '@/config'
 import BasePage from '@/components/BasePage'
 import SidebarIcon from '@/components/SidebarIcon'
+import pages from '@/manifest.json'
 
 export default {
   components: {
@@ -20,9 +20,10 @@ export default {
   },
   data() {
     return {
-      config
+      pages
     }
   },
+  mounted() {},
   methods: {}
 }
 </script>

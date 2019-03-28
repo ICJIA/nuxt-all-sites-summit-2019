@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import config from '@/config'
 export default {
   props: {
     alignment: {
@@ -18,9 +17,7 @@ export default {
     }
   },
   data() {
-    return {
-      config
-    }
+    return {}
   },
   computed: {
     isAlignedLeft() {
