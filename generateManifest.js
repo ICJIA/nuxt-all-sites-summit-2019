@@ -21,25 +21,30 @@ function dynamicSort(property) {
   }
 }
 
-fs.readdir(markdown, (err, files) => {
-  files.forEach(file => {
-    fs.readFile(`${markdown}${file}`, 'utf8', (err, data) => {
-      let obj = {}
-      obj = fm(data)
-      /**
-       * Move attributes.position into sortable position ...
-       */
-      obj.position = obj.attributes.position
-      arr.push(obj)
-      /**
-       * ... sort ...
-       */
-      arr.sort(dynamicSort('position'))
-      /**
-       * ... then delete 'position' from attributes.position
-       */
-      delete obj.attributes.position
-      fs.writeFileSync('manifest.json', JSON.stringify(arr))
-    })
-  })
-})
+// fs.readdir(markdown, (err, files) => {
+//   files.forEach(file => {
+//     fs.readFile(`${markdown}${file}`, 'utf8', (err, data) => {
+//       let obj = {}
+//       obj = fm(data)
+//       /**
+//        * Move attributes.position into sortable position ...
+//        */
+//       obj.position = obj.attributes.position
+//       arr.push(obj)
+//       /**
+//        * ... sort ...
+//        */
+//       arr.sort(dynamicSort('position'))
+//       /**
+//        * ... then delete 'position' from attributes.position
+//        */
+//       delete obj.attributes.position
+
+//       fs.writeFileSync('manifest.json', JSON.stringify(arr))
+//     })
+//   })
+// })
+
+/**
+ * TODO: https://stackoverflow.com/questions/10049557/reading-all-files-in-a-directory-store-them-in-objects-and-send-the-object
+ */
