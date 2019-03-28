@@ -21,30 +21,41 @@ function dynamicSort(property) {
   }
 }
 
-// fs.readdir(markdown, (err, files) => {
-//   files.forEach(file => {
-//     fs.readFile(`${markdown}${file}`, 'utf8', (err, data) => {
-//       let obj = {}
-//       obj = fm(data)
-//       /**
-//        * Move attributes.position into sortable position ...
-//        */
-//       obj.position = obj.attributes.position
-//       arr.push(obj)
-//       /**
-//        * ... sort ...
-//        */
-//       arr.sort(dynamicSort('position'))
-//       /**
-//        * ... then delete 'position' from attributes.position
-//        */
-//       delete obj.attributes.position
+const readFiles = dirname => {
+  const readDirPr = new Promise((resolve, reject) => {
+    fs.readdir(
+      dirname,
+      (err, filenames) => (err ? reject(err) : resolve(filenames))
+    )
+  })
 
-//       fs.writeFileSync('manifest.json', JSON.stringify(arr))
-//     })
-//   })
-// })
+  return readDirPr.then(filenames =>
+    Promise.all(
+      filenames.map(filename => {
+        return new Promise((resolve, reject) => {
+          fs.readFile(dirname + filename, 'utf-8', (err, content) => {
+            let obj = {}
+            obj = fm(content)
+            /**
+             * Move attributes.position into sortable position ...
+             */
+            obj.position = obj.attributes.position
+            /**
+             * ... then delete it from attributes.position
+             */
+            delete obj.attributes.position
+            resolve(obj)
+          })
+        })
+      })
+    ).catch(error => Promise.reject(error))
+  )
+}
 
-/**
- * TODO: https://stackoverflow.com/questions/10049557/reading-all-files-in-a-directory-store-them-in-objects-and-send-the-object
- */
+readFiles('./markdown/').then(
+  allContents => {
+    allContents.sort(dynamicSort('position'))
+    fs.writeFileSync('manifest.json', JSON.stringify(allContents))
+  },
+  error => console.log(error)
+)
