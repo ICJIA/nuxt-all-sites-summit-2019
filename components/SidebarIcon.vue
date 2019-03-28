@@ -12,7 +12,7 @@
 
 <script>
 import { EventBus } from '@/event-bus.js'
-import config from '@/config'
+import pages from '@/manifest.json'
 export default {
   data() {
     return {
@@ -22,12 +22,12 @@ export default {
   computed: {},
   mounted() {
     EventBus.$on('pageUpdate', id => {
-      const result = config.pages.find(obj => {
-        if (obj.id === id) {
+      const result = pages.find(obj => {
+        if (obj.attributes.id === id) {
           return obj
         }
       })
-      this.theme = result.theme
+      this.theme = result.attributes.theme
     })
   },
   methods: {

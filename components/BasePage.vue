@@ -1,10 +1,10 @@
 /* eslint-disable vue/max-attributes-per-line */
 <template>
   <div 
-    :id="page.id" 
+    :id="page.attributes.id" 
     class="page">
     <v-container
-      :style="setPageStyle(page.theme)"
+      :style="setPageStyle(page.attributes.theme)"
       
       fluid
       class="full-width full-height "
@@ -20,25 +20,25 @@
           xs10 
           offset-xs1>
           <div class="wrapper">
-            <page-content :alignment="page.alignment">
+            <page-content :alignment="page.attributes.alignment">
               <template v-slot:header>
-                <div v-if="page.id === 'home'">
+                <div v-if="page.attributes.id === 'home'">
                   <h1 
                     
-                    class="mb-5 main">{{ page.title }}</h1>
+                    class="mb-5 main">{{ page.attributes.title }}</h1>
                 </div>
                 <div v-else>
-                  <h2 class="header">{{ page.title }}</h2>
+                  <h2 class="header">{{ page.attributes.title }}</h2>
                 </div>
               </template>
               <template v-slot:content>
-                <v-layout v-if="page.layout === 'full'">
+                <v-layout v-if="page.attributes.layout === 'full'">
                   <v-flex xs12>
                     <div v-html="renderedMarkdown"/>
                   </v-flex>
                 </v-layout>
                 <v-layout 
-                  v-if="page.layout === 'map'" 
+                  v-if="page.attributes.layout === 'map'" 
                   row 
                   wrap>
                   <v-flex 
@@ -60,9 +60,11 @@
                 </v-layout>
               </template>
 
-              <!-- <template v-slot:debug>
+              <template 
+                v-slot:debug 
+                v-if="config.debug">
                 <div>{{ page }}</div>
-              </template> -->
+              </template>
             </page-content>
           </div>
         </v-flex>
@@ -97,22 +99,18 @@ export default {
   },
   computed: {
     isAlignedLeft() {
-      return this.page.alignment === 'left'
+      return this.page.attributes.alignment === 'left'
     },
     renderedMarkdown() {
-      const markdown = require(`@/markdown/${this.page.file}`)
-      return md.render(markdown.default)
+      return md.render(this.page.body)
     }
+  },
+  mounted() {
+    console.log('Page: ', this.page.attributes.title)
   },
   methods: {
     setPageStyle(theme) {
       return this.config.theme[theme]
-    },
-
-    showSlot(layout) {
-      const test = this.page.layout && layout
-      console.log(test)
-      return test
     }
   }
 }

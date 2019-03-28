@@ -1,3 +1,12 @@
+---
+id: 'about-criminal-justice-coordinating-councils'
+title: 'About Criminal Justice Coordinating Councils'
+theme: 'dark'
+alignment: 'left'
+layout: 'full'
+position: 3
+---
+
 Criminal Justice Coordinating Councils (CJCCs) are partnerships of decision makers who have a stake in the effective administration of justice. Typically the partnerships are organized at the county level and include representatives from:
 
 - The 3 branches of government (executive, judicial, and legislative)

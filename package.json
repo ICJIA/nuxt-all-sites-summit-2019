@@ -17,7 +17,6 @@
     "@nuxtjs/axios": "^5.4.1",
     "cross-env": "^5.2.0",
     "front-matter": "^3.0.1",
-    "jsonfile": "^5.0.0",
     "markdown-it": "^8.4.2",
     "markdown-it-attrs": "^2.3.2",
     "markdown-it-named-headers": "0.0.4",

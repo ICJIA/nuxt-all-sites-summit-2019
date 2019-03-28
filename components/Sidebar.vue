@@ -20,26 +20,27 @@
         </h2>
 
         <div
-          v-for="page in config.pages"
-          :key="page.title"
+          v-for="page in pages"
+          :key="page.attributes.title"
           class="text-xs-center"
-          @click="scrollToSection(page.id)"
+          
         >
           <div 
-            :id="'sidebar-' + page.id" 
+            :id="'sidebar-' + page.attributes.id" 
             class="mb-4 sidebar pr-3 pl-3">
             <div 
               v-scroll-to="'#home'" 
-              v-if="page.id === 'home'"
+              v-if="page.attributes.id === 'home'"
               class="active">
               Home
             </div>
             <div 
-              v-scroll-to="'#' + page.id" 
+              v-scroll-to="'#' + page.attributes.id" 
               v-else>
-              {{ page.title }}
+              {{ page.attributes.title }}
             </div>
           </div>
+         
         </div>
         <v-spacer/>
         <v-divider/>
@@ -54,13 +55,14 @@
 
 <script>
 import { EventBus } from '@/event-bus.js'
-import config from '@/config'
+
+import pages from '@/manifest.json'
 export default {
   data() {
     return {
       drawer: null,
       clipped: false,
-      config
+      pages
     }
   },
   computed: {
