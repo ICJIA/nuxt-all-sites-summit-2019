@@ -1,5 +1,6 @@
 <template>
   <div >
+   
     <sidebar-icon/>
     <base-page 
       v-for="(page, index) in pages" 

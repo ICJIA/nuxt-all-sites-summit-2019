@@ -38,6 +38,9 @@ module.exports = {
       {
         src:
           'https://cdnjs.cloudflare.com/ajax/libs/event-source-polyfill/0.0.9/eventsource.min.js'
+      },
+      {
+        src: '//cdnjs.cloudflare.com/ajax/libs/core-js/2.1.4/core.min.js'
       }
     ]
   },

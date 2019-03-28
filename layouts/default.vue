@@ -2,9 +2,9 @@
   <v-app>
     <sidebar/>
     <v-content>
-      <!-- <v-container> -->
+      
       <nuxt />
-      <!-- </v-container> -->
+      
     </v-content>
    
   </v-app>
@@ -24,6 +24,7 @@ export default {
       currentPage: null
     }
   },
+  computed: {},
   watch: {
     currentPage(newValue, oldValue) {
       EventBus.$emit('pageUpdate', newValue)
@@ -31,6 +32,7 @@ export default {
   },
 
   mounted() {
+    console.log(this.$browserDetect)
     /**
      * Get all pages in window ...
      */
