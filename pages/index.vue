@@ -2,7 +2,7 @@
   <div >
    
     <sidebar-icon/>
-   
+    <test/>
     <base-page 
       v-for="(page, index) in pages" 
       :key="index" 
@@ -14,11 +14,13 @@
 import BasePage from '@/components/BasePage'
 import SidebarIcon from '@/components/SidebarIcon'
 import pages from '@/manifest.json'
+import Test from '@/components/Test'
 
 export default {
   components: {
     BasePage,
-    SidebarIcon
+    SidebarIcon,
+    Test
   },
   data() {
     return {
