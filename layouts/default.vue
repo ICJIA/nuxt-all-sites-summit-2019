@@ -3,7 +3,7 @@
     
     <sidebar/>
     <v-content>
-      <browser-detect/>
+      <outdated-browser/>
       <nuxt />
       
     </v-content>
@@ -15,12 +15,12 @@
 import config from '@/config'
 import Sidebar from '@/components/Sidebar'
 import { EventBus } from '@/event-bus.js'
-import BrowserDetect from '@/Components/BrowserDetect'
+import OutdatedBrowser from '@/Components/OutdatedBrowser'
 export default {
   name: 'App',
   components: {
     Sidebar,
-    BrowserDetect
+    OutdatedBrowser
   },
   data() {
     return {
