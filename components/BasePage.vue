@@ -120,8 +120,6 @@ export default {
 
 <style>
 .wrapper {
-  /* padding-left: 50px;
-  padding-right: 50px; */
 }
 
 .full-height {

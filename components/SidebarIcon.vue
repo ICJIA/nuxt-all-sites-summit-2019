@@ -1,7 +1,7 @@
 <template>
   <v-icon 
     id="hamburger" 
-    :class="{dark: isDark, light: isLight}"
+    :class="{dark: theme === 'light', light: theme === 'dark'}"
     x-large 
     @click="toggleSidebar"
   >menu</v-icon
@@ -19,17 +19,9 @@ export default {
       theme: 'light'
     }
   },
-  computed: {
-    isDark() {
-      return this.theme === 'light'
-    },
-    isLight() {
-      return this.theme === 'dark'
-    }
-  },
+  computed: {},
   mounted() {
     EventBus.$on('pageUpdate', id => {
-      console.log('New page: ', id)
       const result = config.pages.find(obj => {
         if (obj.id === id) {
           return obj
