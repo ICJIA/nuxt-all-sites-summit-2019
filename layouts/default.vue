@@ -1,8 +1,9 @@
 <template>
   <v-app>
+    
     <sidebar/>
     <v-content>
-      
+      <browser-detect/>
       <nuxt />
       
     </v-content>
@@ -14,10 +15,12 @@
 import config from '@/config'
 import Sidebar from '@/components/Sidebar'
 import { EventBus } from '@/event-bus.js'
+import BrowserDetect from '@/Components/BrowserDetect'
 export default {
   name: 'App',
   components: {
-    Sidebar
+    Sidebar,
+    BrowserDetect
   },
   data() {
     return {
