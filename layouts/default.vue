@@ -29,6 +29,9 @@ export default {
   computed: {},
   watch: {
     currentPage(newValue, oldValue) {
+      /**
+       * If scrolling caused a new page to come into view, fire event to change the color of the sidebar icon.
+       */
       EventBus.$emit('pageUpdate', newValue)
     }
   },
@@ -48,14 +51,16 @@ export default {
     Array.prototype.forEach.call(page, function(e) {
       pages[e.id] = e.offsetTop
     })
-
+    /**
+     * ... listen for scroll and determine what 'page' is in view ...
+     */
     window.onscroll = () => {
       const scrollPosition =
         document.documentElement.scrollTop || document.body.scrollTop
       for (p in pages) {
         if (pages[p] <= scrollPosition) {
           /**
-           * ... then add 'active' class to current section ...
+           * ... then add 'active' class to sidebar link for current section ...
            */
           const el = document.getElementById('sidebar-' + p)
           var els = document.querySelectorAll('.active')

@@ -7,6 +7,8 @@ let files = []
 const path = require('path')
 
 /**
+ * Sort array of objects by property
+ *
  * https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
  */
 function dynamicSort(property) {
