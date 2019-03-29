@@ -23,11 +23,12 @@
           v-for="page in pages"
           :key="page.attributes.title"
           class="text-xs-center"
-          
+          @click="checkSidebar"
         >
           <div 
             :id="'sidebar-' + page.attributes.id" 
-            class="mb-4 sidebar pr-3 pl-3">
+            class="mb-4 sidebar pr-3 pl-3" 
+          >
             <div 
               v-scroll-to="'#home'" 
               v-if="page.attributes.id === 'home'"
@@ -82,8 +83,7 @@ export default {
     } else {
       this.drawer = true
     }
-  },
-  mounted() {
+
     EventBus.$on('toggleSidebar', () => {
       this.drawer = !this.drawer
     })
@@ -92,11 +92,10 @@ export default {
     })
   },
   methods: {
-    scrollToSection(id) {
+    checkSidebar() {
       if (this.isXs || this.isSm) {
         EventBus.$emit('setSidebar', false)
       }
-      EventBus.$emit('scrollTo', id)
     }
   }
 }
