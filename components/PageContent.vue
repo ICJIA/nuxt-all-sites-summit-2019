@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'text-xs-left': isAlignedLeft }">
+  <div :class="{ 'text-xs-left': alignment === 'left' }">
     <slot name="header"/>
 
     <slot name="content"/>
@@ -19,11 +19,7 @@ export default {
   data() {
     return {}
   },
-  computed: {
-    isAlignedLeft() {
-      return this.alignment === 'left'
-    }
-  }
+  computed: {}
 }
 </script>
 

@@ -14,7 +14,7 @@
        
         row 
         pl-5 
-        pr-5>
+        pr-0>
         <v-flex 
           class="text-xs-center" 
           xs10 
