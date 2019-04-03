@@ -9,8 +9,18 @@ position: 0
 
 ## MAY 14 & 15, 2019
 
-### DoubleTree by Hilton, Bloomington, Illinois{.muted .mt-3}
+<div class="mt-3">
+
+### [DoubleTree by Hilton.](http://https://doubletree.hilton.com/en/dt/groups/personalized/B/BMIDTDT-ICJ-20190513/index.jhtml?WT.mc_id=POG){.muted}
+
+</div>
 
 ### 10 Brickyard Drive{.muted}
 
 ### Bloomington, IL 61701{.muted}
+
+<div class="mt-3">
+
+## [Register Now](https://www.eventbrite.com/e/2019-adult-redeploy-illinois-criminal-justice-coordinating-council-summit-registration-59485399431)
+
+</div>

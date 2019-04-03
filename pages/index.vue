@@ -35,4 +35,8 @@ export default {
   margin: 0;
   padding: 0;
 }
+a {
+  font-weight: bold;
+  color: #00796b;
+}
 </style>
