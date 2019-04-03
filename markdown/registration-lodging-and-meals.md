@@ -15,7 +15,7 @@ position: 10
 
 - ARI participants must make lodging reservations on their own or through their ARI-funded programs. Up to five CJCC participants from each partner county will have their lodging and travel convered by Loyola University. CJCC sites should contact Bryant Jackson-Green at Bryant.JacksonGreen@Illinois.gov to confirm hotel arrangements.
 
-The DoubleTree has set aside a block of rooms for the night of Tuesday, May 14. Reservations should be made by April 22, 2019 to ensure access to the state rate. Ask for the "Illinois Criminal Justice Authority" (code "ICJ") room block when making reservations at 1-309-664-6446, or use this link: [DoubleTree by Hilton.](http://https://doubletree.hilton.com/en/dt/groups/personalized/B/BMIDTDT-ICJ-20190513/index.jhtml?WT.mc_id=POG)
+The DoubleTree has set aside a block of rooms for the night of Tuesday, May 14. Reservations should be made by April 22, 2019 to ensure access to the state rate. Ask for the "Illinois Criminal Justice Authority" (code "ICJ") room block when making reservations at 1-309-664-6446, or use this link: [DoubleTree by Hilton.](https://doubletree.hilton.com/en/dt/groups/personalized/B/BMIDTDT-ICJ-20190513/index.jhtml?WT.mc_id=POG)
 
 - Expected start time is 1:00 p.m. on Tuesday, May 14. The Wednesday, May 15, program will start at 8:30 a.m. Registration will be open one hour before the start of sessions both days.
 

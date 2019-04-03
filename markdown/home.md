@@ -11,7 +11,7 @@ position: 0
 
 <div class="mt-3">
 
-### [DoubleTree by Hilton.](http://https://doubletree.hilton.com/en/dt/groups/personalized/B/BMIDTDT-ICJ-20190513/index.jhtml?WT.mc_id=POG){.muted}
+### [DoubleTree by Hilton](<https://doubletree.hilton.com/en/dt/groups/personalized/B/BMIDTDT-ICJ-20190513/index.jhtml?WT.mc_id=POG](https://doubletree.hilton.com/en/dt/groups/personalized/B/BMIDTDT-ICJ-20190513/index.jhtml?WT.mc_id=POG)>){.muted}
 
 </div>
 
