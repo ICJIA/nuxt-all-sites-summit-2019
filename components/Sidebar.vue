@@ -45,9 +45,9 @@
         </div>
         <v-spacer/>
         <v-divider/>
-        <div class="text-xs-center mb-3 px-3 pt-4">
+        <div class="text-xs-center mb-3 px-3 pt-4 hover">
           <img
-            src="@/assets/img/logo-small.png"
+            src="@/assets/img/logo-white.png"
             class="logo"
             height="40"
             @click="goto('http://www.icjia.state.il.us')"
@@ -118,6 +118,9 @@ export default {
       if (this.isXs || this.isSm) {
         EventBus.$emit('setSidebar', false)
       }
+    },
+    goto(url) {
+      location.href = url
     }
   }
 }
@@ -156,8 +159,11 @@ h6 {
   text-decoration: none;
   font-weight: 700;
 }
-
+.logo:hover {
+  cursor: pointer;
+}
 .sidebar-info:hover {
   color: #aaa;
+  cursor: pointer !important;
 }
 </style>
