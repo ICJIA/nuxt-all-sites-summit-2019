@@ -1,7 +1,7 @@
 ---
 id: 'about-adult-redeploy-illinois'
 title: 'About Adult Redeploy Illinois'
-theme: 'light'
+theme: 'white'
 alignment: 'left'
 layout: 'map'
 position: 2

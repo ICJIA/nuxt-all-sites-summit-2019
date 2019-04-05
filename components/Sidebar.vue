@@ -13,9 +13,9 @@
         <h2
           v-scroll-to="'#home'"
           class="text-xs-center"
-          style="font-size: 34px; margin-top: 20px;margin-bottom: 50px; border-bottom: 1px solid #ccc; padding-bottom: 10px;"
+          style="font-size: 34px; margin-top: 20px;margin-bottom: 50px; border-bottom: 1px solid #ccc; padding-bottom: 10px; color: #eee"
         >
-          SUMMIT TITLE HERE
+          2019 ARI & CJCC Summit
         
         </h2>
 
@@ -45,8 +45,30 @@
         </div>
         <v-spacer/>
         <v-divider/>
-        <div class="text-xs-center mb-3 pt-3">
-          <h4 style="color: #333;">Additional Info Here</h4>
+        <div class="text-xs-center mb-3 px-3 pt-4">
+          <img
+            src="@/assets/img/logo-small.png"
+            class="logo"
+            height="40"
+            @click="goto('http://www.icjia.state.il.us')"
+          >
+          <h5 
+            style="color: #fff" 
+            class="mt-2">
+            &copy;&nbsp;2019
+            <a
+              class="sidebar-info"
+              href="http://www.icjia.state.il.us"
+            >Illinois Criminal Justice Information Authority</a>
+          </h5>
+          <h5
+            class="pt-3" 
+            style="font-weight: 400">
+            <a 
+              href="https://github.com/ICJIA/nuxt-all-sites-summit-2019" 
+              class="sidebar-info">View on Github</a>
+          </h5>
+         
         </div>
       </v-layout>
       
@@ -127,5 +149,15 @@ h6 {
 
 .active {
   color: #42d5c6 !important;
+}
+
+.sidebar-info {
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.sidebar-info:hover {
+  color: #aaa;
 }
 </style>

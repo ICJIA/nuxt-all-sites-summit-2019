@@ -30,6 +30,10 @@ const config = {
     light: {
       color: '#333',
       background: '#efefef'
+    },
+    white: {
+      color: '#333',
+      background: '#fff'
     }
   }
 }

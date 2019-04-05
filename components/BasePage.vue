@@ -54,7 +54,10 @@
                     <h1 
                       style="margin-top: -25px;" 
                       class="text-xs-center">
-                      map here
+                      <img 
+                        src="/map.png"
+                        alt="ARI 2019 Map"
+                        height="500">
                     </h1>
                   </v-flex>
                 </v-layout>
