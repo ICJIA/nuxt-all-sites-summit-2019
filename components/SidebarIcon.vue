@@ -1,13 +1,10 @@
 <template>
-  <v-icon 
-    id="hamburger" 
-    :class="{dark: theme === 'light', light: theme === 'dark'}"
-    x-large 
+  <v-icon
+    id="hamburger"
+    :class="{dark: theme === 'light' || theme==='white', light: theme === 'dark'}"
+    x-large
     @click="toggleSidebar"
-  >menu</v-icon
-  >
-
-
+  >menu</v-icon>
 </template>
 
 <script>
