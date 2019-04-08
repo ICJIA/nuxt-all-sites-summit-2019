@@ -5,6 +5,19 @@ const manifest = 'manifest.json'
 let arr = []
 const path = require('path')
 
+let md = require('markdown-it')({
+  html: true,
+  xhtmlOut: false,
+  breaks: true,
+  langPrefix: 'language-',
+  linkify: true,
+  typographer: false,
+  quotes: '“”‘’'
+})
+  .use(require('markdown-it-footnote'))
+  .use(require('markdown-it-named-headers'))
+  .use(require('markdown-it-attrs'))
+
 /**
  * Sort array of objects by property
  *
@@ -46,6 +59,8 @@ const readFiles = dirname => {
              * ... then delete it from attributes.position
              */
             delete obj.attributes.position
+            let html = md.render(obj.body)
+            obj.html = html.replace(/(\r\n|\n|\r)/gm, '')
             resolve(obj)
           })
         })

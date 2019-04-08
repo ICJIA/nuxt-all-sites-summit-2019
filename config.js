@@ -1,13 +1,4 @@
 const config = {
-  markdownItOptions: {
-    html: true,
-    xhtmlOut: false,
-    breaks: true,
-    langPrefix: 'language-',
-    linkify: true,
-    typographer: false,
-    quotes: '“”‘’'
-  },
   scrollToOptions: {
     container: 'body',
     duration: 500,

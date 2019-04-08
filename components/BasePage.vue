@@ -1,9 +1,20 @@
 /* eslint-disable vue/max-attributes-per-line */
 <template>
-  <div :id="page.attributes.id" class="page">
-    <v-container :style="setPageStyle(page.attributes.theme)" fluid class="full-width full-height">
-      <v-layout row pl-5 pr-0>
-        <v-flex class="text-xs-center" xs10 offset-xs1>
+  <div 
+    :id="page.attributes.id" 
+    class="page">
+    <v-container 
+      :style="setPageStyle(page.attributes.theme)" 
+      fluid 
+      class="full-width full-height">
+      <v-layout 
+        row 
+        pl-5 
+        pr-0>
+        <v-flex 
+          class="text-xs-center" 
+          xs10 
+          offset-xs1>
           <div class="wrapper">
             <page-content :alignment="page.attributes.alignment">
               <template v-slot:header>
@@ -20,19 +31,36 @@
                     <div v-html="renderedMarkdown"/>
                   </v-flex>
                 </v-layout>
-                <v-layout v-if="page.attributes.layout === 'map'" row wrap>
-                  <v-flex xs12 sm12 md6>
+                <v-layout 
+                  v-if="page.attributes.layout === 'map'" 
+                  row 
+                  wrap>
+                  <v-flex 
+                    xs12 
+                    sm12 
+                    md6>
                     <div v-html="renderedMarkdown"/>
                   </v-flex>
-                  <v-flex xs12 sm12 md6 hidden-sm-and-down>
-                    <h1 style="margin-top: -25px;" class="text-xs-center">
-                      <img src="/map.png" alt="ARI 2019 Map" height="500">
+                  <v-flex 
+                    xs12 
+                    sm12 
+                    md6 
+                    hidden-sm-and-down>
+                    <h1 
+                      style="margin-top: -25px;" 
+                      class="text-xs-center">
+                      <img 
+                        src="/map.png" 
+                        alt="ARI 2019 Map" 
+                        height="500">
                     </h1>
                   </v-flex>
                 </v-layout>
               </template>
 
-              <template v-slot:debug v-if="config.debug">
+              <template 
+                v-slot:debug 
+                v-if="config.debug">
                 <div>{{ page }}</div>
               </template>
             </page-content>
@@ -45,9 +73,6 @@
 
 <script>
 import config from '@/config'
-const md = require('markdown-it')(config.markdownItOptions)
-  .use(require('markdown-it-named-headers'))
-  .use(require('markdown-it-attrs'))
 
 import PageContent from '@/components/PageContent'
 export default {
@@ -70,7 +95,7 @@ export default {
       return this.page.attributes.alignment === 'left'
     },
     renderedMarkdown() {
-      return md.render(this.page.body)
+      return this.page.html
     }
   },
   mounted() {},
