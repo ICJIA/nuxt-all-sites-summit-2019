@@ -1,10 +1,16 @@
 <template>
-  <v-icon
-    id="hamburger"
-    :class="{dark: theme === 'light' || theme==='white', light: theme === 'dark'}"
-    x-large
-    @click="toggleSidebar"
-  >menu</v-icon>
+  <div>
+    <v-icon
+      id="hamburger"
+      :class="{dark: theme === 'light' || theme==='white', light: theme === 'dark'}"
+      x-large
+      @click="toggleSidebar"
+    >menu</v-icon>
+    <img 
+      src="../assets/img/logo-small-blue.jpg" 
+      width="80"
+      class="logo">
+  </div>
 </template>
 
 <script>
@@ -54,5 +60,11 @@ export default {
 
 button:focus {
   outline: 0 !important;
+}
+
+.logo {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 </style>
