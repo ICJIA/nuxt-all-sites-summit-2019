@@ -145,6 +145,23 @@ h2.header {
   padding-bottom: 8px;
 }
 
+h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+h2.session {
+  margin-top: 35px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+h2.session.first {
+  margin-top: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
 .muted {
   color: #666;
 }
