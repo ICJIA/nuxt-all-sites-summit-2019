@@ -12,7 +12,7 @@ position: 1100
 - Anita Bazile-Sawyer, PhD, Chief of Programs & Support Services, Illinois Department of Corrections
 - Richard Adkins, MPA, Assistant Director, Administrative Office of Illinois Courts
 
-Download: [Understading_the_Use_of _Prison _Versus _Probation.pdf](/static/Understading_the_Use_of_Prison_Versus_Probation.pdf)
+Download: [Understading_the_Use_of _Prison _Versus _Probation.pdf](/Understading_the_Use_of_Prison_Versus_Probation.pdf)
 
 ## Strategies for Jail Reduction{.session}
 - Rebecca Barboza, LCSW, Project Director, Cook County Safety and Justice Challenge
@@ -68,7 +68,7 @@ Download: [Instead_of_Prison.pdf](/Instead_of_Prison.pdf)
 ## Contingency Management and Phase Progression{.session}
 - Michelle Cern, MPA, Principal Court Management Consultant, National Center for State Courts
 
-Download:
+Download: [ARI_&_CJCC_Summit_Phases_and_Responses_to_Behavior_Final.pdf](/ARI_&_CJCC_Summit_Phases_and_Responses_to_Behavior_Final.pdf)
 
 ## Trauma and the Courtroom{.session}
 - Mary Lee, MS, LSW, LCPC, SAMHSA Certified Trainer
@@ -76,12 +76,17 @@ Download:
 
 Download: [How_To_Be_A_TraumaInformed_Problem-Solving_Court.pdf](/How_To_Be_A_TraumaInformed_Problem-Solving_Court.pdf)
 
+Download: [ACE_Questionnaire_Short.pdf](/ACE_Questionnaire_Short.pdf)
+Download: [Resiliency_Questionnaire.pdf](/Resiliency_Questionnaire.pdf)
+Download: [Screening_Primary_Care_PTSD.pdf](/Screening_Primary_Care_PTSD.pdf)
+
+
 ## Pre-Arrest Diversion/Deflection{.session}
 - Jac Charlier, MPA, Executive Director, TASC’s Center for Health and Justice
 - Jessica Reichert, MS, Manager, Center for Justice Research and Evaluation, Illinois Criminal Justice Information Authority
 - Deputy Chief Michael Gaspari, Elk Grove Village Police Department
 
-Download: [Charlier_PTACC_ARI_Deflection_May_2019](/Charlier_PTACC_ARI_Deflection_May_2019)
+Download: [Charlier_PTACC_ARI_Deflection_May_2019](/Charlier_PTACC_ARI_Deflection_May_2019.pdf)
 Download: [Reichert_ARI summit_Deflection_research](/Reichert_ARIsummit_Deflection_research.pdf)
 
 ## Coordination in Rural Jurisdictions{.session}
