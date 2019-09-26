@@ -50,7 +50,7 @@
                       style="margin-top: -25px;" 
                       class="text-xs-center">
                       <img 
-                        src="/map.png" 
+                        :src="require('@/assets/img/map.png')" 
                         alt="ARI 2019 Map" 
                         height="500">
                     </h1>

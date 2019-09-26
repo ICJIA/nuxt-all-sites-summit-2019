@@ -1,6 +1,6 @@
 const pkg = require('./package')
 const config = require('./config')
-
+console.log(process.env.NODE_ENV)
 module.exports = {
   mode: 'universal',
 
@@ -80,6 +80,9 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+  router: {
+    base: process.env.NODE_ENV === 'development' ? '/' : '/ariallsites2019/'
   },
 
   /*
