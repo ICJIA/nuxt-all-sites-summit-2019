@@ -11,6 +11,6 @@ The 2019 ARI-CJCC Summit will focus on the practical advantages and challenges a
 
 For more information, contact gail.smith@illinois.gov, Policy and Program Coordinator, Adult Redeploy Illinois.
 
-[Download Agenda](/2019ARI-CJCCSummitAgenda5.7.pdf)
+[Download Agenda](/2019ARI-CJCCSummitAgenda5.7.pdf){.download}
 
-[Download Speaker Bios](2019_Summit_bios.pdf)
+[Download Speaker Bios](/2019_Summit_bios.pdf){.download}

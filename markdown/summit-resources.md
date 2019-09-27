@@ -13,7 +13,7 @@ position: 1100
 - Anita Bazile-Sawyer, PhD, Chief of Programs & Support Services, Illinois Department of Corrections
 - Richard Adkins, MPA, Assistant Director, Administrative Office of Illinois Courts
 
-Download: [Understading_the_Use_of_Prison_Versus_Probation.pdf](/Understading_the_Use_of_Prison_Versus_Probation.pdf)
+Download: [Understading_the_Use_of_Prison_Versus_Probation.pdf](/Understading_the_Use_of_Prison_Versus_Probation.pdf){.download}
 
 ## Strategies for Jail Reduction{.session}
 
@@ -21,9 +21,9 @@ Download: [Understading_the_Use_of_Prison_Versus_Probation.pdf](/Understading_th
 - Frank Beck, PhD, Faculty Director & Associate Professor of Sociology, Illinois State University
 - Anthony Vega, MPP, Chief of Staff, Lake County Sheriff’s Office
 
-Download: [Cook_County_SJC_Strategies.pdf](/Cook_County_SJC_Strategies.pdf)
-Download: [Lake_County_SJC_Presentation.pdf](/Lake_County_SJC_Presentation.pdf)
-Download: [McLean_Jail_Reduction_Trends.pdf](/Lake_County_SJC_Presentation.pdf)
+Download: [Cook_County_SJC_Strategies.pdf](/Cook_County_SJC_Strategies.pdf){.download}
+Download: [Lake_County_SJC_Presentation.pdf](/Lake_County_SJC_Presentation.pdf){.download}
+Download: [McLean_Jail_Reduction_Trends.pdf](/Lake_County_SJC_Presentation.pdf){.download}
 
 ## Collaboration and Commitment: Findings from the SIU ARI Evaluation{.session}
 
@@ -31,20 +31,20 @@ Download: [McLean_Jail_Reduction_Trends.pdf](/Lake_County_SJC_Presentation.pdf)
 - Amanda Hayes, Probation Officer, DuPage County
 - DaJuan Johnson, Probation Officer, Macon County
 
-Download: [Kroner_SIU_ARI_Presentation_May_2019.pdf](/Kroner_SIU_ARI_Presentation_May_2019.pdf)
+Download: [Kroner_SIU_ARI_Presentation_May_2019.pdf](/Kroner_SIU_ARI_Presentation_May_2019.pdf){.download}
 
 ## Keynote Address: The Role of Crime Survivors in Criminal Justice Reform{.session}
 
 - Aswad Thomas, MSW, Chapter Development & Membership Director, Alliance for Safety & Justice
 
-Download: [ASJ_Illinois_Crime_survivors_FINAL_online.pdf](/ASJ_Illinois_Crime_survivors_FINAL_online.pdf)
+Download: [ASJ_Illinois_Crime_survivors_FINAL_online.pdf](/ASJ_Illinois_Crime_survivors_FINAL_online.pdf){.download}
 
 ## Probation Officers as Coaches{.session}
 
 - Brian Lovins, PhD, Principal, Justice System Partners
 
-Download: [Referees_and_Coaches.pdf](/Referees_and_Coaches.pdf)
-Download: [Probation_Officer_as_Coach_Article.pdf](/Probation_Officer_as_Coach_Article.pdf)
+Download: [Referees_and_Coaches.pdf](/Referees_and_Coaches.pdf){.download}
+Download: [Probation_Officer_as_Coach_Article.pdf](/Probation_Officer_as_Coach_Article.pdf){.download}
 
 ## Collateral Consequences and Criminal Records Relief{.session}
 
@@ -53,7 +53,7 @@ Download: [Probation_Officer_as_Coach_Article.pdf](/Probation_Officer_as_Coach_A
 - Emily Cole, Supervisor, Cook County State’s Attorney’s Office
 - Danetta, a WRAP Court Graduate
 
-Download: [CGLA_Criminal_Records_Relief_Presentation.pdf](/CGLA_Criminal_Records_Relief_Presentation.pdf)
+Download: [CGLA_Criminal_Records_Relief_Presentation.pdf](/CGLA_Criminal_Records_Relief_Presentation.pdf){.download}
 
 ## Instead of Prison: Enhancing Diversion and Community Resources to Reduce Violence{.session}
 
@@ -62,7 +62,7 @@ Download: [CGLA_Criminal_Records_Relief_Presentation.pdf](/CGLA_Criminal_Records
 - Lisa Daniels, Founder, Darren B. Easterling Center for Restorative Practices; Illinois Prisoner Review Board
 - Kathryn Bocanegra, LCSW, PhD Candidate, University of Chicago
 
-Download: [Instead_of_Prison.pdf](/Instead_of_Prison.pdf)
+Download: [Instead_of_Prison.pdf](/Instead_of_Prison.pdf){.download}
 
 ## Restorative Justice and the Courts{.session}
 
@@ -73,18 +73,18 @@ Download: [Instead_of_Prison.pdf](/Instead_of_Prison.pdf)
 
 - Michelle Cern, MPA, Principal Court Management Consultant, National Center for State Courts
 
-Download: [ARI\_&_CJCC_Summit_Phases_and_Responses_to_Behavior_Final.pdf](/ARI_&_CJCC_Summit_Phases_and_Responses_to_Behavior_Final.pdf)
+Download: [ARI\_&_CJCC_Summit_Phases_and_Responses_to_Behavior_Final.pdf](/ARI_&_CJCC_Summit_Phases_and_Responses_to_Behavior_Final.pdf){.download}
 
 ## Trauma and the Courtroom{.session}
 
 - Mary Lee, MS, LSW, LCPC, SAMHSA Certified Trainer
 - Hon. Janet Holmgren, Judge, 17th Circuit Court of Illinois
 
-Download: [How_To_Be_A_TraumaInformed_Problem-Solving_Court.pdf](/How_To_Be_A_TraumaInformed_Problem-Solving_Court.pdf)
+Download: [How_To_Be_A_TraumaInformed_Problem-Solving_Court.pdf](/How_To_Be_A_TraumaInformed_Problem-Solving_Court.pdf){.download}
 
-Download: [ACE_Questionnaire_Short.pdf](/ACE_Questionnaire_Short.pdf)
-Download: [Resiliency_Questionnaire.pdf](/Resiliency_Questionnaire.pdf)
-Download: [Screening_Primary_Care_PTSD.pdf](/Screening_Primary_Care_PTSD.pdf)
+Download: [ACE_Questionnaire_Short.pdf](/ACE_Questionnaire_Short.pdf){.download}
+Download: [Resiliency_Questionnaire.pdf](/Resiliency_Questionnaire.pdf){.download}
+Download: [Screening_Primary_Care_PTSD.pdf](/Screening_Primary_Care_PTSD.pdf){.download}
 
 ## Pre-Arrest Diversion/Deflection{.session}
 
@@ -92,9 +92,9 @@ Download: [Screening_Primary_Care_PTSD.pdf](/Screening_Primary_Care_PTSD.pdf)
 - Jessica Reichert, MS, Manager, Center for Justice Research and Evaluation, Illinois Criminal Justice Information Authority
 - Deputy Chief Michael Gaspari, Elk Grove Village Police Department
 
-Download: [Charlier_PTACC_ARI_Deflection_May_2019](/Charlier_PTACC_ARI_Deflection_May_2019.pdf)
-Download: [Reichert_ARI summit_Deflection_research](/Reichert_ARIsummit_Deflection_research.pdf)
-Download: [Gaspari_2019_Adult_Redeploy_Summit.pdf](/Gaspari_2019_Adult_Redeploy_Summit.pdf)
+Download: [Charlier_PTACC_ARI_Deflection_May_2019](/Charlier_PTACC_ARI_Deflection_May_2019.pdf){.download}
+Download: [Reichert_ARI summit_Deflection_research](/Reichert_ARIsummit_Deflection_research.pdf){.download}
+Download: [Gaspari_2019_Adult_Redeploy_Summit.pdf](/Gaspari_2019_Adult_Redeploy_Summit.pdf){.download}
 
 ## Coordination in Rural Jurisdictions{.session}
 
@@ -103,7 +103,7 @@ Download: [Gaspari_2019_Adult_Redeploy_Summit.pdf](/Gaspari_2019_Adult_Redeploy_
 - Debbie Allen, MSW, Executive Adviser to the Mayor, City of St. Louis
 - Mary Ratliff, MA, Program Director, Family Violence Coordinating Council, Illinois Criminal Justice Information Authority
 
-Download: [CoordinationinRural Jurisdictions_ARI_CJCC_Summit_2019.pdf](/CoordinationinRuralJurisdictions_ARI_CJCC_Summit_2019.pdf)
+Download: [CoordinationinRural Jurisdictions_ARI_CJCC_Summit_2019.pdf](/CoordinationinRuralJurisdictions_ARI_CJCC_Summit_2019.pdf){.download}
 
 ## Additional Readings
 

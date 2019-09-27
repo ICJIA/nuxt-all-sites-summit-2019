@@ -1,4 +1,5 @@
 const config = {
+  publicPath: '/ariallsites2019',
   scrollToOptions: {
     container: 'body',
     duration: 500,
