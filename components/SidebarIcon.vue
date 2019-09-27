@@ -7,7 +7,7 @@
       @click="toggleSidebar"
     >menu</v-icon>
     <img 
-      src="../assets/img/logo-small-blue.jpg" 
+      :src="require('@/assets/img/logo-small-blue.jpg')" 
       width="80"
       class="logo" 
       alt="Illinois Criminal Justice Information Authority"
