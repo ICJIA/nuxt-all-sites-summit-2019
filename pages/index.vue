@@ -26,14 +26,14 @@ export default {
     }
   },
   mounted() {
-    console.log('publicPath: ', this.$appConfig.publicPath)
-    if (process.env.NODE_ENV !== 'development') {
-      var links = [].slice.call(document.getElementsByClassName('download'))
-      links.forEach(link => {
-        let filename = link.href.substring(link.href.lastIndexOf('/') + 1)
-        link.href = `${this.$appConfig.publicPath}/${filename}`
-      })
-    }
+    // console.log('publicPath: ', this.$appConfig.publicPath)
+    // if (process.env.NODE_ENV !== 'development') {
+    //   var links = [].slice.call(document.getElementsByClassName('download'))
+    //   links.forEach(link => {
+    //     let filename = link.href.substring(link.href.lastIndexOf('/') + 1)
+    //     link.href = `${this.$appConfig.publicPath}/${filename}`
+    //   })
+    // }
   },
   methods: {}
 }

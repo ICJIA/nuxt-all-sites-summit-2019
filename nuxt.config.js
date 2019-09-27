@@ -85,9 +85,9 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-  router: {
-    base: process.env.NODE_ENV === 'development' ? '/' : `${config.publicPath}/`
-  },
+  // router: {
+  //   base: process.env.NODE_ENV === 'development' ? '/' : `${config.publicPath}/`
+  // },
 
   /*
   ** Build configuration
