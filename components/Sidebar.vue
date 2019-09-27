@@ -46,12 +46,12 @@
         <v-spacer/>
         <v-divider/>
         <div class="text-xs-center mb-3 px-3 pt-4 hover">
-          <img
+          <!-- <img
             :src="require('@/assets/img/logo-white.png')"
             class="logo"
             height="40"
             @click="goto('http://www.icjia.state.il.us')"
-          >
+          > -->
           <h5 
             style="color: #fff" 
             class="mt-2">

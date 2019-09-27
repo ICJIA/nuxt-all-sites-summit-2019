@@ -46,14 +46,14 @@
                     sm12 
                     md6 
                     hidden-sm-and-down>
-                    <h1 
+                    <!-- <h1 
                       style="margin-top: -25px;" 
                       class="text-xs-center">
                       <img 
                         :src="require('@/assets/img/map.png')" 
                         alt="ARI 2019 Map" 
                         height="500">
-                    </h1>
+                    </h1> -->
                   </v-flex>
                 </v-layout>
               </template>
